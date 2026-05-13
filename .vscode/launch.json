@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: bot once",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_bot.py",
+      "console": "integratedTerminal",
+      "args": ["--config", "config.json", "--once"]
+    },
+    {
+      "name": "Debug: backtest",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_backtest.py",
+      "console": "integratedTerminal",
+      "args": ["--config", "config.json", "--pages", "5"]
+    }
+  ]
+}
